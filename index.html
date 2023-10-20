@@ -18,19 +18,19 @@
     <h1 class="heading header__title content-section">Карты подскажут</h1>
 
     <nav class="header__menu content-section">
-      <div class="header__logo">
+      <a class="header__logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="135" height="25">
           <use href="./images/logo.svg#logo"></use>
         </svg>
-      </div>
+      </a>
 
       <ul class="header__theme-toggler">
         <li>
-          <button class="header__theme-button header__theme-button_type_dark" type="submit">Тёмная</button>
+          <button class="header__theme-button header__theme-button_type_dark" type="button">Тёмная</button>
         </li>
         <li>
           <button class="header__theme-button header__theme-button_type_light header__theme-button_is-active"
-            type="submit" disabled>
+            type="button" disabled>
             Светлая
           </button>
         </li>
@@ -61,12 +61,17 @@
 
     <figure class="content__figure">
       <picture>
-        <source srcset="./images/cards-2x.avif" type="image/avif" />
-        <source srcset="./images/cards-1x.avif" type="image/avif" />
-        <source srcset="./images/cards-2x.webp" type="image/webp" />
-        <source srcset="./images/cards-1x.webp" type="image/webp" />
-        <source srcset="./images/cards-2x.png" />
-        <img class="content__picture" src="./images/cards-1x.png" alt="Стол" />
+        <source srcset="./images/cards-1x.avif 1x,
+                       ./images/cards-2x.avif 2x" 
+                type="image/avif" />
+        <source srcset="./images/cards-1x.webp 1x,
+                        ./images/cards-2x.webp 2x"
+                type="image/webp" />
+        <img class="content__picture"
+             srcset="./images/cards-1x.png 1x,
+                     ./images/cards-2x.png 2x" 
+             alt="Стол, на котором лежат колода Oblique Strategies, телефон, ручка и стоит цветок"
+             loading="lazy" />
       </picture>
       <figcaption class="content__picture-caption">
         Колода Oblique Strategies
@@ -99,15 +104,14 @@
       <p class="content__paragraph">И кстати, сейчас необязательно охотиться за редкими физическими колодами Oblique
         Strategies — тем более, что их моментально разбирают фанаты Ино. Есть довольно симпатичные
         <a href="https://obliquestrategies.ca/" target="_blank">веб-сайты</a> с
-        диджитал-эквивалентами карточек и приложения для
-        <a href="https://apps.apple.com/us/app/oblique-strategies-se/id1104927011" target="_blank">iOS</a> и <a
+        диджитал-эквивалентами карточек и приложения <a href="https://apps.apple.com/us/app/oblique-strategies-se/id1104927011" target="_blank">для iOS</a> и <a
           href="https://play.google.com/store/apps/details?id=com.monoloco.obliquestrategies&hl=en_US&gl=US&pli=1"
           target="_blank">Android</a>.
       </p>
     </div>
 
     <article class="content__card">
-      <h3 class="heading content__card-title">Use an <span class="colored-text">old idea</span></h3>
+      <h2 class="heading content__card-title">Use an <span class="colored-text">old idea</span></h2>
       <p class="content__card-subtitle">
         Воспользуйтесь старой идеей
       </p>

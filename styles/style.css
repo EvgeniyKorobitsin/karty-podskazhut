@@ -23,7 +23,7 @@
 .page {
   margin: 0;
   color: var(--text-color);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, serif);
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -84,7 +84,7 @@ button:focus-visible {
 }
 
 .heading {
-  font-family: var(--accent-font, sans-serif);
+  font-family: var(--accent-font, serif);
   font-weight: 600;
   line-height: .9;
   text-align: center;
